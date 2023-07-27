@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Planos</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Calculadora de planos de saúde</h1>
+    </div>
+    <form id="planForm">
+        <div class="center">
+            <p>Escolha o Plano:</p><br>
+            <select class="sel" name="selected_plan" id="selected_plan">
+                <option value="1">Bitix Plano Cliente 1</option>
+                <option value="2">Bitix Plano Cliente 2</option>
+                <option value="3">Bitix Plano Cliente 3</option>
+                <option value="4">Bitix Plano Cliente 4</option>
+                <option value="5">Bitix Plano Cliente 5</option>
+                <option value="6">Bitix Plano Cliente 6</option>
+            </select>
+        </div>
+        <div class="center">
+            <div class="beneficiary">
+                <h3>Adicione beneficiários</h3><br>
+                <p id="benCount">Nenhum Beneficiário adicionado</p><br>
+                <div class="inpContainer" id="inpContainer">
+                    <div id="benecifiary[1]">
+                        <label for="name0">Nome:</label>
+                        <input class="input" type="text" name="beneficiaries[0][name]" id="name0" required>
+                        <label for="age0">Idade:</label>
+                        <input class="input" type="number" name="beneficiaries[0][age]" id="age0" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <br>
+            <button class="btn blue" type="button" onclick="addBeneficiary()">Adicionar Beneficiário</button>
+            <br><br>
+            <button class="btn green" type="submit">Calcular Preços</button>
+        </div>
+        <br><br>
+    </form>
+    <h2 id="total_value"></h2> <br><br>
+    <h2>Beneficiários:</h2>
+    <div id="resultContainer"></div>
+
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

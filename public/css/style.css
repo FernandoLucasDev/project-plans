@@ -1,0 +1,86 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 5rem;
+    background-color: cadetblue;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+.center {
+    width: 100%;
+    height: fit-content;
+    margin-top: 3rem;
+    display: grid;
+    place-items: center;
+}
+
+.flex {
+    width: 100%;
+    height: fit-content;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sel {
+    border: 1px solid rgb(82, 82, 82);
+    padding: 1.6rem 12px 1.6rem 12px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.input {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid rgb(82,82,82);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 1rem;
+}
+
+.btn {
+    padding: 1.2rem 8px 1.2rem 8px;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: rgb(0, 82, 177);
+}
+
+#resultContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 20rem;
+    height: fit-content;
+    padding: 1.6rem;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.hidden-beneficiary {
+    display: none;
+}
